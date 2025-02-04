@@ -173,3 +173,4 @@ cython_debug/
 #personal notes
 notes/
 users/
+utils/config.py
