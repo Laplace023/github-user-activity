@@ -1,11 +1,12 @@
 #my get module for the project
 import os
+import config
 
 
-def gitGet(argument):
+def gitGet(argument, password):
     print(argument)
-
-
+    
+    #the api call, I still have to filter the events
     os.system(f"""
     curl -L \
     -H "Accept: application/vnd.github+json" \
@@ -16,9 +17,7 @@ def gitGet(argument):
 
 
 
-
-
 if __name__ == "__main__":
     import sys
-    gitGet(str(sys.argv[1]))
+    gitGet(str(sys.argv[1]), str(sys.argv[2]))
 #making it usable for testing
