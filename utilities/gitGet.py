@@ -1,6 +1,5 @@
 #my get module for the project
 import os
-import config
 
 
 def gitGet(argument, password):
