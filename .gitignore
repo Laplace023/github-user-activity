@@ -174,3 +174,4 @@ cython_debug/
 notes/
 users/
 utilities/config.py
+tempData.json
