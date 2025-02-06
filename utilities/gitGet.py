@@ -8,6 +8,7 @@ def gitGet(argument, password):
     
     #the api call, I still have to filter the events
     try:
+        os.remove("tempData.json")
         output = os.system(f"""
         curl -L \
         -H "Accept: application/vnd.github+json" \
@@ -22,6 +23,11 @@ def gitGet(argument, password):
 
     #writting it as json. I'll write it as a temporary json file
     #I have to change the output to a dictionary.
+    with open("tempData.json", mode="r", encoding="utf-8") as jsonFile:
+        listFile = json.load(jsonFile)
+        print(type(listFile))
+    for x in listFile:
+        print(f"{x["created_at"]}, triggered {x["type"]} on {x["repo"]["name"]}")
 
 
 
