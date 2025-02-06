@@ -21,6 +21,7 @@ def gitGet(argument, password):
         print("something is wrong")
 
     #writting it as json. I'll write it as a temporary json file
+    #I have to change the output to a dictionary.
 
 
 
