@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #main code
 
 from utilities.gitGet import gitGet
